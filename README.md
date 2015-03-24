@@ -30,12 +30,19 @@ vagrant up
 This will download and initialise the basic image
 (later on this command will be blazing fast, as the base vm is already available on your system).
 
+If you have a unstable internet connection, you may get some git errors. In case of errors, run: 
+
+```bash
+vagrant provision
+```
+
 Other important commands
 ```bash
 vagrant suspend - suspend the CM
 vagrant status  - show status of the virtual maschine
 vagrant halt    - shutdown the virtual maschine
 vagrant destroy - destroy the virtual maschine (drop virtual drives, ...)
+vagrant provision - try to heal the virtual maschine if you get some error messages
 ```
 
 You can get more information about vagrant from the vagrant documentation:
